@@ -21,10 +21,9 @@ The chatbot is powered by the Google Gemini generative AI model, which handles t
 ### API Configuration:
 
 The Google Gemini API is configured using an API key, which is stored securely in an environment variable.
-python
-Copy code
+```python
 import google.generativeai as genai
-genai.configure(api_key="Your_API_Key_Here")
+genai.configure(api_key="Your_API_Key_Here")```
 Model Initialization:
 
 The GenerativeModel class is used to start a chat session with the Gemini model, which maintains the conversation history.
