@@ -11,10 +11,10 @@ Politeness Bonus (Optional): Sentiment analysis can be incorporated to improve o
 The chatbot is initialized with a product, base price, and a discount range. During the negotiation, the chatbot engages the user by presenting the current price and responding to the user's offers or decisions (accept/reject). The AI model generates responses that are focused on securing the deal with minimal discounts.
 
 ### Conversation Flow
-Initiate Negotiation: The chatbot starts by presenting the base price of the product.
-User Input: The user can either propose a new price, accept the current price, or reject the offer.
-AI Response: The chatbot uses the Gemini model to generate a response, either accepting the offer, rejecting it, or proposing a counteroffer.
-Loop or End: The conversation continues until the user accepts, rejects, or the negotiation reaches the maximum number of rounds.
+1. **Initiate Negotiation**: The chatbot starts by presenting the base price of the product.
+2. **User Input**: The user can either propose a new price, accept the current price, or reject the offer.
+3. **AI Response**: The chatbot uses the Gemini model to generate a response, either accepting the offer, rejecting it, or proposing a counteroffer.
+4. **Loop or End**: The conversation continues until the user accepts, rejects, or the negotiation reaches the maximum number of rounds.
 ## Integration with Google Gemini Model
 The chatbot is powered by the Google Gemini generative AI model, which handles the conversational logic. Here’s a step-by-step guide on how the integration is achieved:
 
