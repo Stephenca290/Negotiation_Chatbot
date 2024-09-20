@@ -1,28 +1,24 @@
 # Negotiation_Chatbot
-
-Here’s a suggested structure and content for the README file in your GitHub repository:
-
-Negotiation Chatbot
-Overview
+## Overview
 This repository contains the source code for a negotiation chatbot that simulates a price negotiation process between a customer and a supplier. The chatbot leverages a pre-trained AI model from Google Gemini to handle the conversational aspect of the negotiation. The chatbot aims to maximize the sale price with minimal discounts, while allowing the user to propose counteroffers or accept/reject the offer.
 
-Features
+## Features
 Product Negotiation: The chatbot negotiates the price of a product (e.g., a laptop) with the customer, offering small concessions based on the customer’s counteroffers.
 Pricing Logic: Implements logic to handle discounts within a specified range and ensure prices decrease with each negotiation round.
 AI Model Integration: Uses the Google Gemini pre-trained language model to generate persuasive, concise negotiation responses.
 Politeness Bonus (Optional): Sentiment analysis can be incorporated to improve outcomes, offering better deals if the customer is polite.
-How It Works
+## How It Works
 The chatbot is initialized with a product, base price, and a discount range. During the negotiation, the chatbot engages the user by presenting the current price and responding to the user's offers or decisions (accept/reject). The AI model generates responses that are focused on securing the deal with minimal discounts.
 
-Conversation Flow
+### Conversation Flow
 Initiate Negotiation: The chatbot starts by presenting the base price of the product.
 User Input: The user can either propose a new price, accept the current price, or reject the offer.
 AI Response: The chatbot uses the Gemini model to generate a response, either accepting the offer, rejecting it, or proposing a counteroffer.
 Loop or End: The conversation continues until the user accepts, rejects, or the negotiation reaches the maximum number of rounds.
-Integration with Google Gemini Model
+## Integration with Google Gemini Model
 The chatbot is powered by the Google Gemini generative AI model, which handles the conversational logic. Here’s a step-by-step guide on how the integration is achieved:
 
-API Configuration:
+### API Configuration:
 
 The Google Gemini API is configured using an API key, which is stored securely in an environment variable.
 python
@@ -60,7 +56,7 @@ Encourage the customer to close the deal soon.
 Keep coversation short and concise.
 Address the customer directly, using "you" instead of "the customer."
 """
-Usage
+##Usage
 To use this chatbot, follow these steps:
 
 Clone the Repository:
@@ -86,11 +82,9 @@ python chatbot.py
 Interact with the Chatbot:
 
 Follow the on-screen instructions to negotiate the price of the product.
-Demo
-A demo video showcasing the negotiation process can be found here.
+
 
 Contributing
 Contributions are welcome! If you have suggestions or find issues, feel free to open an issue or submit a pull request.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
