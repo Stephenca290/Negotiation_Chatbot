@@ -3,10 +3,9 @@
 This repository contains the source code for a negotiation chatbot that simulates a price negotiation process between a customer and a supplier. The chatbot leverages a pre-trained AI model from Google Gemini to handle the conversational aspect of the negotiation. The chatbot aims to maximize the sale price with minimal discounts, while allowing the user to propose counteroffers or accept/reject the offer.
 
 ## Features
-Product Negotiation: The chatbot negotiates the price of a product (e.g., a laptop) with the customer, offering small concessions based on the customer’s counteroffers.
-Pricing Logic: Implements logic to handle discounts within a specified range and ensure prices decrease with each negotiation round.
-AI Model Integration: Uses the Google Gemini pre-trained language model to generate persuasive, concise negotiation responses.
-Politeness Bonus (Optional): Sentiment analysis can be incorporated to improve outcomes, offering better deals if the customer is polite.
+- **Product Negotiation**: The chatbot negotiates the price of a product (e.g., a laptop) with the customer, offering small concessions based on the customer’s counteroffers.
+- **Pricing Logic**: Implements logic to handle discounts within a specified range and ensure prices decrease with each negotiation round.
+- **AI Model Integration**: Uses the Google Gemini pre-trained language model to generate persuasive, concise negotiation responses.
 ## How It Works
 The chatbot is initialized with a product, base price, and a discount range. During the negotiation, the chatbot engages the user by presenting the current price and responding to the user's offers or decisions (accept/reject). The AI model generates responses that are focused on securing the deal with minimal discounts.
 
@@ -84,7 +83,7 @@ python chatbot.py
 Follow the on-screen instructions to negotiate the price of the product.
 
 
-Contributing
+## Contributing
 Contributions are welcome! If you have suggestions or find issues, feel free to open an issue or submit a pull request.
 
 
