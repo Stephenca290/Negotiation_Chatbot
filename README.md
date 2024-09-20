@@ -25,25 +25,24 @@ The Google Gemini API is configured using an API key, which is stored securely i
 import google.generativeai as genai
 genai.configure(api_key="Your_API_Key_Here")
 ```
-Model Initialization:
+### Model Initialization:
 
 The GenerativeModel class is used to start a chat session with the Gemini model, which maintains the conversation history.
-python
-Copy code
+```python
 self.model = genai.GenerativeModel('gemini-pro')
 self.chat = self.model.start_chat(history=[])
-Generating AI Responses:
+```
+### Generating AI Responses:
 
 Each user input is processed by the Gemini model, which generates context-aware responses tailored to the negotiation process.
-python
-Copy code
+```python
 response = self.chat.send_message(f"{system_prompt}\n\nUser: {user_message}")
 return response.text
-Customizing AI Prompts:
+```
+### Customizing AI Prompts:
 
 The chatbot uses a dynamic prompt that updates with each negotiation round, focusing on maintaining a high sale price with minimal discounts.
-python
-Copy code
+```python
 system_prompt = f"""
 You are a salesperson negotiating the price of a {self.product.name}.
 Current price: ${self.current_price}
@@ -56,30 +55,31 @@ Encourage the customer to close the deal soon.
 Keep coversation short and concise.
 Address the customer directly, using "you" instead of "the customer."
 """
+```
 ##Usage
 To use this chatbot, follow these steps:
 
-Clone the Repository:
+### Clone the Repository:
 
-bash
-Copy code
+```bash
 git clone https://github.com/Stephenca290/Negotiation_Chatbot.git
 cd Negotiation_Chatbot
-Set Up the Environment:
+```
+### Set Up the Environment:
 
 Ensure Python is installed on your system.
 Install required libraries, primarily the Google Generative AI library.
-bash
-Copy code
+```bash
 pip install google-generative-ai
-Run the Chatbot:
+```
+### Run the Chatbot:
 
 Replace "Your_API_Key_Here" in the code with your actual Google Gemini API key.
 Execute the script to start the negotiation chatbot.
-bash
-Copy code
+```bash
 python chatbot.py
-Interact with the Chatbot:
+```
+### Interact with the Chatbot:
 
 Follow the on-screen instructions to negotiate the price of the product.
 
